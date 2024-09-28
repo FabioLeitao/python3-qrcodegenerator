@@ -4,7 +4,7 @@
 
 Any Python version after 3.10
 
-python3 -m pip install qrcodegen --upgrade --user
+python3 -m pip install segno --upgrade --user
 
 ## Reporting a Vulnerability
 
