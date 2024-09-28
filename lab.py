@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-import os
+import os, stat, shutil
 from datetime import datetime
-import shutil
 import segno
 
 # Preparativos e variaveis
