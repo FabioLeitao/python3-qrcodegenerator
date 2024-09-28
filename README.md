@@ -10,3 +10,7 @@ Created assuming naming conventions for PCs in ICTSI Rio, with 12 characters lon
 Assumes python3 under Linux (most likely Debian-like distro), but might be easyly modified to your reality
 
 It usually generates a pretty file, unique per string
+
+Exemplo1 | Exemplo2 | Exemplo3
+--- | --- | ---
+![QRCode Sample1](https://github.com/FabioLeitao/python3-qrcodegenerator/blob/848301fe78c33c5353c9fb45ca4c2b39f98692bc/T1R-D-001161.png)|![QRCode Sample2](https://github.com/FabioLeitao/python3-qrcodegenerator/blob/848301fe78c33c5353c9fb45ca4c2b39f98692bc/T1R-L-00000110.png)|![QRCode Sample3](https://github.com/FabioLeitao/python3-qrcodegenerator/blob/848301fe78c33c5353c9fb45ca4c2b39f98692bc/T1R-N-002004.png)
