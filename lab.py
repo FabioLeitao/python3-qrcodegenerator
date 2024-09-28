@@ -1,4 +1,4 @@
-# basic_qrcode.py
+#!/usr/bin/python3
 
 import segno
 
