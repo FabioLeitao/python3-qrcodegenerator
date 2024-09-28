@@ -1,7 +1,21 @@
 
+1.0.1 / 2024-09-28
+==================
+
+  * Change log da v1.0.1
+  * Incluido exemplo PDF, sem modificar o Zoom do default 6, mas seria possivel combinar os gatilhos passados como argumentos se for preciso
+  * Aplicando atualizaçoes funcionais, como exportação para PDF nos argumentos
+  * Update SECURITY.md
+  * Ampliado repertório de imagens exemplo geradas
+  * Merge branch 'main' of github.com:FabioLeitao/python3-qrcodegenerator Sincronizando com local novamente depois de editar README remotamente pelo site
+  * Forçado envio de uma imagem gerada como exemplo
+  * Modificado arquivo de lista de strings para demonstração
+  * Corrigidos artefatos para refletirem evolucao das funcionalidades do script
+
 1.0.0 / 2024-09-28
 ==================
 
+  * Change log da v1.0.0
   * Incluido contador de loops, refletindo imagens geradas com sucesso
   * Corrigindo texto de ajuda para refletir as evolução funcional
   * Previne bug de comprimento variavel de strings, aceitando qq combinacao, inclusive variando ao longo do arquivo, para facilitar o uso para outras situações e não apenas PCs da ICTSI Rio
