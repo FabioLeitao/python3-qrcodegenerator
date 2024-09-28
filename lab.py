@@ -2,8 +2,8 @@
 
 import segno
 
-qrcode = segno.make_qr("Hello, World")
+qrcode = segno.make_qr("T1R-L-000001")
 qrcode.save(
-    "scaled_qrcode.png",
+    "T1R-L-000001_qrcode.png",
     scale=5,
 )
