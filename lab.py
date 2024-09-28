@@ -8,15 +8,16 @@ contador = 0
 zoom_imagem = 6
 lista_etiquetas = "./lista.txt"
 pasta_etiquetas = "./etiquetas_" + datetime.now().strftime('%Y-%m-%d')
+extensao_etiquetas = "png"
 
 # Remove 1st argument from the list of command line arguments
 argumentList = sys.argv[1:]
 
 # Options
-options = "hz:"
+options = "hpz:"
 
 # Long options
-long_options = ["Help", "Zoom="]
+long_options = ["Help", "PDF", "Zoom="]
 
 try: 
     # Parsing argument
@@ -25,11 +26,14 @@ try:
     # Checking each argument
     for currentArgument, currentValue in arguments:
         if currentArgument in ("-h", "--Help"):
-            print("\n./lab.py [options]\n\n Options:\n    -h | --Help     Mostra esta ajuda\n    -z | --Zoom=    Indica zoom da imagem resultante (padrão é 6)\n\n  Foi criado pensado na geração de etiquetas para PCs da ICTSI Rio seuinda padrão de nomenclatura de strings de 12 catacteres no formato padrão T1R-T-NNNNNN para gerar etiquetas coerentes, mas foi adaptado para aceitar auqleur compimento e formatação, desde que seja mantido um nome unico por linha")
+            print("\n./lab.py [options]\n\n Options:\n    -h | --Help     Mostra esta ajuda\n    -p | --PDF    Indica formado a ser salvo em PDF (padrão é PNG)\n    -z | --Zoom=    Indica zoom da imagem resultante (padrão é 6)\n\n  Foi criado pensado na geração de etiquetas para PCs da ICTSI Rio seuinda padrão de nomenclatura de strings de 12 catacteres no formato padrão T1R-T-NNNNNN para gerar etiquetas coerentes, mas foi adaptado para aceitar auqleur compimento e formatação, desde que seja mantido um nome unico por linha")
             quit()
+        elif currentArgument in ("-p", "--PDF"):
+            print(("Salvando em arquivos formato PDF"))
+            extensao_etiquetas = "pdf"
         elif currentArgument in ("-z", "--Zoom"):
             print(("Utilizando valor de zoom resultante (%s)") % (currentValue))
-            zoom_imagem = (currentValue)
+            zoom_imagem = int(currentValue)
 except getopt.error as err:
     # Output error, and return with an error code
     print(str(err))
@@ -46,8 +50,8 @@ if os.path.exists(lista_etiquetas):
         # Muda variaveis de acordo com input do arquivo de lista
         comprimento = len(etiqueta) - 1
         texto_etiqueta = etiqueta[:comprimento]
-        arquivo_etiqueta = pasta_etiquetas + "/" + texto_etiqueta + ".png"
-        print (texto_etiqueta)
+        arquivo_etiqueta = pasta_etiquetas + "/" + texto_etiqueta + "." + extensao_etiquetas
+        print (arquivo_etiqueta)
         # Cria etiqueta(s)
         qrcode = segno.make_qr(texto_etiqueta)
         qrcode.save(
