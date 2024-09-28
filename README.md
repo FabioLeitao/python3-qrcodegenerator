@@ -5,11 +5,13 @@ Using popular libraries such as segno
 
 Able do adjust zoom level of genarated lables on the fly passing an argument value (default zoom = 6)
 
-Created assuming naming conventions for PCs in ICTSI Rio, with 12 characters long string (most likely following a nomenclature standard as T1R-T-NNNNNN), but made flexible regardless, whatever valid string lengh and Unicode UTF-8 Charset should and might work
+Ablo to export to PNG (default file format) or PDF as a trigger argument
+
+Created assuming naming conventions for PCs in ICTSI Rio, with 12 characters long string (most likely following a nomenclature standard as T1R-T-NNNNNN), but made flexible regardless, whatever valid string lengh and Unicode UTF-8 Charset should be in listas.txt file, and might work if it is able to represent a folder or file name as such.
 
 Assumes python3 under Linux (most likely Debian-like distro), but might be easyly modified to your reality
 
-It usually generates a pretty file, unique per string
+It usually generates a pretty file, unique per string (still studing a way to create an array of lables)
 
 Exemplo1 (z6) | Exemplo2 (z10) | Exemplo3 (z3)
 --- | --- | ---
