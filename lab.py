@@ -4,6 +4,7 @@ from datetime import datetime
 import segno
 
 # Preparativos e variaveis
+contador = 0
 zoom_imagem = 6
 lista_etiquetas = "./lista.txt"
 pasta_etiquetas = "./etiquetas_" + datetime.now().strftime('%Y-%m-%d')
@@ -40,6 +41,8 @@ if os.path.exists(lista_etiquetas):
     os.makedirs(pasta_etiquetas,exist_ok=True)
     etiquetas = open(lista_etiquetas, "r")
     for etiqueta in etiquetas:
+        # Aumenta contador de loops
+        contador = contador + 1
         # Muda variaveis de acordo com input do arquivo de lista
         comprimento = len(etiqueta) - 1
         texto_etiqueta = etiqueta[:comprimento]
@@ -52,7 +55,7 @@ if os.path.exists(lista_etiquetas):
                 scale=zoom_imagem,
                 )
     etiquetas.close
-    print("OK - Imagens de etiquetas geradas com sucesso")
+    print("OK - " + str(contador) + " Imagens de etiquetas geradas com sucesso")
 else:
     print("ERROR - Arquivo de lista não localizado")
 
