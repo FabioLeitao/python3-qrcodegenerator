@@ -24,7 +24,7 @@ try:
     # Checking each argument
     for currentArgument, currentValue in arguments:
         if currentArgument in ("-h", "--Help"):
-            print("\n./lab.py [options]\n\n Options:\n    -h | --Help     Mostra esta ajuda\n    -z | --Zoom=    Indica zoom da imagem resultante (padrão é 6)\n\n  É necessária presença de arquivo lista.txt contento string de 12 catacteres no formato padrão T1R-T-NNNNNN para gerar etiquetas coerentes")
+            print("\n./lab.py [options]\n\n Options:\n    -h | --Help     Mostra esta ajuda\n    -z | --Zoom=    Indica zoom da imagem resultante (padrão é 6)\n\n  Foi criado pensado na geração de etiquetas para PCs da ICTSI Rio seuinda padrão de nomenclatura de strings de 12 catacteres no formato padrão T1R-T-NNNNNN para gerar etiquetas coerentes, mas foi adaptado para aceitar auqleur compimento e formatação, desde que seja mantido um nome unico por linha")
             quit()
         elif currentArgument in ("-z", "--Zoom"):
             print(("Utilizando valor de zoom resultante (%s)") % (currentValue))
