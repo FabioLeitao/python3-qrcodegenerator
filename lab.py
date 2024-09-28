@@ -24,7 +24,7 @@ try:
     # Checking each argument
     for currentArgument, currentValue in arguments:
         if currentArgument in ("-h", "--Help"):
-            print("\n./lab.py [options]\n\n Options:\n    -h | --Help   Mostra esta ajuda\n    -z | --Zoom=   Indica zoom da imagem resultante (padrão é 6)\n\n  É necessária presença de arquivo lista.txt contento string de 12 catacteres no formato padrão T1R-T-NNNNNN para gerar etiquetas coerentes")
+            print("\n./lab.py [options]\n\n Options:\n    -h | --Help     Mostra esta ajuda\n    -z | --Zoom=    Indica zoom da imagem resultante (padrão é 6)\n\n  É necessária presença de arquivo lista.txt contento string de 12 catacteres no formato padrão T1R-T-NNNNNN para gerar etiquetas coerentes")
             quit()
         elif currentArgument in ("-z", "--Zoom"):
             print(("Utilizando valor de zoom resultante (%s)") % (currentValue))
@@ -41,7 +41,8 @@ if os.path.exists(lista_etiquetas):
     etiquetas = open(lista_etiquetas, "r")
     for etiqueta in etiquetas:
         # Muda variaveis de acordo com input do arquivo de lista
-        texto_etiqueta = etiqueta[:12]
+        comprimento = len(etiqueta) - 1
+        texto_etiqueta = etiqueta[:comprimento]
         arquivo_etiqueta = pasta_etiquetas + "/" + texto_etiqueta + ".png"
         print (texto_etiqueta)
         # Cria etiqueta(s)
