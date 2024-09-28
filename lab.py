@@ -3,4 +3,7 @@
 import segno
 
 qrcode = segno.make_qr("Hello, World")
-qrcode.save("basic_qrcode.png")
+qrcode.save(
+    "scaled_qrcode.png",
+    scale=5,
+)
