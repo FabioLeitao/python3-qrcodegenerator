@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-import os, getopt, sys, stat, shutil
+import io, os, getopt, sys, stat, shutil
 from datetime import datetime
+from PIL import Image
 import segno
 
 # Preparativos e variaveis
@@ -53,7 +54,10 @@ if os.path.exists(lista_etiquetas):
         arquivo_etiqueta = pasta_etiquetas + "/" + texto_etiqueta + "." + extensao_etiquetas
         print (arquivo_etiqueta)
         # Cria etiqueta(s)
-        qrcode = segno.make_qr(texto_etiqueta)
+        qrcode = segno.make_qr(
+                texto_etiqueta, 
+                error='h'
+                )
         qrcode.save(
                 arquivo_etiqueta,
                 scale=zoom_imagem,

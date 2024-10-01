@@ -1,7 +1,5 @@
-T1R-L-00000110
+T1R-L-000001
 T1R-D-001161
 T1R-N-002004
-T1R-C-01
+T1R-C-010000
 T1R-S-CCOS-CFTV-AX1-001
-T1R Com Espaço no nome
-Qualquer string completamente válida em Unicode UTF-8 deveria funcionar
