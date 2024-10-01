@@ -1,4 +1,11 @@
 
+1.0.3 / 2024-10-01
+==================
+
+  * Change log da v1.0.3
+  * Merge branch 'main' of github.com:FabioLeitao/python3-qrcodegenerator Sincronizado novamente
+  * Corrigido possivel bug ao tentar gerar PDF com icone artistico
+
 1.0.2 / 2024-10-01
 ==================
 
