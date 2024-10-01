@@ -35,6 +35,8 @@ try:
             icon=True
         elif currentArgument in ("-p", "--PDF"):
             print(("Salvando em arquivos formato PDF"))
+            if icon:
+                icon=False
             extensao_etiquetas = "pdf"
         elif currentArgument in ("-z", "--Zoom"):
             print(("Utilizando valor de zoom resultante (%s)") % (currentValue))
