@@ -1,4 +1,15 @@
 
+1.0.2 / 2024-10-01
+==================
+
+  * Change log da v1.0.2
+  * Salvando com icone artistico dependendo do argumento
+  * Merge branch 'main' of github.com:FabioLeitao/python3-qrcodegenerator Sincronizacao local
+  * Melhorias no script
+  * Atualizada lista.txt e incluido possivel icone
+  * Update SECURITY.md
+
+
 1.0.1 / 2024-09-28
 ==================
 
