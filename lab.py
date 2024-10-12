@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/local/bin/python3.13
 import io, os, getopt, sys, stat, shutil
 from datetime import datetime
 from PIL import Image
